@@ -147,51 +147,51 @@ exports.getVideosByBanner = function (req, res, next) {
   });
 
 };
-
 // / 根据排行榜视频
-exports.getVideoTaxis = function (req, res, next) {
+exports.getVideoTaxis = function(req, res, next) {
 
-  console.log('getVideoTaxis api');
+    console.log('getVideoTaxis api');
 
-  res.setHeader('content-type', 'application/json;charset=utf-8');
-  res.charSet('utf-8');
+    res.setHeader('content-type', 'application/json;charset=utf-8');
+    res.charSet('utf-8');
 
-  var sql = 'select v.id,v.title,v.url as videoUrl ,v.pic,v.type,v.createTime as pushTime,(select count(*) from `tb_user_video` tub WHERE tub.`status` = 1 AND tub.userId = 1 AND tub.videoId = v.id) as isCollectStatus FROM `tb_video` AS v JOIN (SELECT ROUND(RAND() * (SELECT MAX(id) FROM `tb_video`)) AS id) AS v1 WHERE v.id >= v1.id ORDER BY v.id ASC LIMIT 25';
+    var sql = 'select v.id,v.title,v.url as videoUrl ,v.pic,v.type,v.createTime as pushTime,(select count(*) from `tb_user_video` tub WHERE tub.`status` = 1 AND tub.userId = 1 AND tub.videoId = v.id) as isCollectStatus FROM `tb_video` AS v JOIN (SELECT ROUND(RAND() * (SELECT MAX(id) FROM `tb_video`)) AS id) AS v1 WHERE v.id >= v1.id ORDER BY v.id ASC LIMIT 25';
 
-  var values = [];
- 
-  console.log("q sql => " + sql);
+    var values = [];
 
-  console.log("q values => " + values);
+    console.log("q sql => " + sql);
 
-  pool.query(sql,values, function(err, rows, fields) {
-      if (err){
-          console.log(err);
-          throw err;
-      }
+    console.log("q values => " + values);
 
-      for (var i = 0; i < rows.length; i++) {
-          rows[i]["id"] = rows[i]["id"]+ '';
+    pool.query(sql, values, function(err, rows, fields) {
+        if (err) {
+            console.log(err);
+            throw err;
+        }
 
-          if (rows[i]["id"] > 76384) {
-             rows[i]["title"] =  new Buffer(rows[i]["title"], 'base64').toString();
-          }
+        for (var i = 0; i < rows.length; i++) {
+            rows[i]["id"] = rows[i]["id"] + '';
 
-      }
-           
+            if (rows[i]["id"] > 76384) {
+                rows[i]["title"] = new Buffer(rows[i]["title"], 'base64').toString();
+            }
 
-      var resultJson = {
+        }
 
-          message : '获取数据成功',
-          statusCode : 200,
-          content : rows,
-          request : req.url
 
-      };
+        var resultJson = {
 
-      res.send(200, resultJson);
-      return next();
-  });
+            message: '获取数据成功',
+            statusCode: 200,
+            content: rows,
+            request: req.url
+
+        };
+
+        res.send(200, resultJson);
+        return next();
+    });
 
 };
+
 

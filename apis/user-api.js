@@ -74,7 +74,7 @@ exports.registerUser = function (req, res, next) {
  	
  		var installSql = 'insert into  `tb_user` ( `phone`, `password`, `headImage`, `status`, `gender`, `platformId`, `platformName`, `nickName`) values (? , ?, ?, 1, ?, ?, ?, ?)';
     	
- 		var values = [user.phone, user.phone, user.headImage, user.gender, user.platformId, user.platformName, user.nickName];
+ 		var values = [user.phone, user.password, user.headImage, user.gender, user.platformId, user.platformName, user.nickName];
 
 	    pool.query(installSql, values, function(err, rows, fields) {
 	      if (err){
@@ -103,6 +103,19 @@ exports.registerUser = function (req, res, next) {
 	      	res.send(httpStatusCode, resultJson);
 	      	return next();
 
+	      } else {
+			resultJson = {
+      	
+
+         	 error_code: '注册失败',
+		     error_code: 400,
+		     error_detail: '注册失败',
+		     request: req.url
+
+      		};
+			res.send(400, resultJson);
+      		return next();
+
 	      }
 	      
 	  });
@@ -111,10 +124,71 @@ exports.registerUser = function (req, res, next) {
       
   });
 
-  
+};
+
+exports.loginUser = function(req, res, next){
+
+  	res.setHeader('content-type', 'application/json;charset=utf-8');
+  	res.charSet('utf-8');
+
+  	console.log('loginUser api');
+	
+	var selectUserSql = 'select * from tb_user tu where tu.`status` = 1 AND tu.phone = ?  AND tu.password = ? ';
+
+  	var values = [req.params.phone, req.params.password];
+
+  	var resultJson;
+
+  	console.log('selectUserSql -> ' + selectUserSql);
+
+  	console.log('values -> ' + values);
+
+
+  	pool.query(selectUserSql,values, function(err, rows, fields) {
+      if (err){
+          console.log(err);
+          throw err;
+      }
+
+      
+	  
+      if (rows[0]) {
+      	console.log('rows[0] -> ' + rows[0]["id"]);
+		console.log('登录成功');
+		rows[0]['password'] = '';
+		resultJson = {
+      	
+
+          message : '登录成功',
+          statusCode : 201,
+          content : rows[0],
+          request : req.url
+
+      	};
+
+      	res.send(201, resultJson);
+      	return next();
+      } else {
+
+
+      	resultJson = {
+      	
+
+          error_code : '登录失败',
+          error_code : 400,
+          error_detail : '用户名或密码错误',
+          request : req.url
+
+      	};
+			res.send(400, resultJson);
+      		return next();
+
+      }      
+  });
 
 
 };
+
  
 
 function User(id, nickName, password, headImage, phone, gender, platformId, platformName){
