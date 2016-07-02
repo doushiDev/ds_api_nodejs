@@ -71,7 +71,7 @@ exports.getVideosById = function (req, res, next) {
   var sql = 'select v.id,v.title,v.url as videoUrl ,v.pic,v.type,v.createTime as pushTime,(select count(*) from `tb_user_video` tub WHERE tub.`status` = 1 AND tub.userId = ? AND tub.videoId = v.id) as isCollectStatus from `tb_video` v where  v.id = ? ';
 
   var values = [Number(req.params.userId), Number(req.params.videoId)];
- 
+
   console.log("q sql => " + sql);
 
   console.log("q values => " + values);
@@ -82,10 +82,10 @@ exports.getVideosById = function (req, res, next) {
           throw err;
       }
 
-      
+
           rows[0]["id"] = rows[0]["id"]+ '';
           rows[0]["title"] =  new Buffer(rows[0]["title"], 'base64').toString();
-  
+
 
       var resultJson = {
 
@@ -114,7 +114,7 @@ exports.getVideosByBanner = function (req, res, next) {
   var sql = 'select v.id,v.title,v.url as videoUrl ,v.pic,v.type,v.createTime as pushTime,(select count(*) from `tb_user_video` tub WHERE tub.`status` = 1 AND tub.userId = 1 AND tub.videoId = v.id) as isCollectStatus FROM `tb_video` AS v JOIN (SELECT ROUND(RAND() * (SELECT MAX(id) FROM `tb_video`)) AS id) AS v1 WHERE v.id >= v1.id ORDER BY v.id ASC LIMIT 5';
 
   var values = [];
- 
+
   console.log("q sql => " + sql);
 
   console.log("q values => " + values);
@@ -131,7 +131,7 @@ exports.getVideosByBanner = function (req, res, next) {
              rows[i]["title"] =  new Buffer(rows[i]["title"], 'base64').toString();
           }
       }
-           
+
 
       var resultJson = {
 
@@ -193,5 +193,3 @@ exports.getVideoTaxis = function(req, res, next) {
     });
 
 };
-
-
