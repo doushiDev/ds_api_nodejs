@@ -34,6 +34,15 @@ server.get(version + '/rest/user/loginUser/:phone/:password', userApi.loginUser)
 server.post(version + '/rest/userAndVideo/addUserFavoriteVideo', userApi.registerUser);
 
 
+// 配置静态文件 Swagger
+server.get(/\/public\/?.*/, restify.serveStatic({
+    directory: __dirname
+}));
+
+server.get(/\/public\/?.*\/?.*/, restify.serveStatic({
+    directory: __dirname
+}));
+
 
 
 server.listen(port, function() {
