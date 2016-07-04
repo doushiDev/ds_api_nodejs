@@ -107,7 +107,7 @@ exports.registerUser = function (req, res, next) {
 			resultJson = {
       	
 
-         	 error_code: '注册失败',
+         	 error: '注册失败',
 		     error_code: 400,
 		     error_detail: '注册失败',
 		     request: req.url

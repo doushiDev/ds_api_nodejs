@@ -38,7 +38,7 @@ exports.addUserFavoriteVideo = function(req, res, next) {
                     console.log('此视频已经收藏');
 
                     resultJson = {
-                        error_code: '此视频已经收藏',
+                        error: '此视频已经收藏',
                         error_code: 400,
                         error_detail: '此视频已经收藏',
                         request: req.url
