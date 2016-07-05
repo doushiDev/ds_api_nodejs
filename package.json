@@ -7,14 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "express": "^4.14.0",
-    "mysql": "*",
-    "restify": "latest"
+    "express": "^4.14.0"
   },
   "devDependencies": {
     "MD5": "latest",
     "mysql": "latest",
-    "restify": "latest"
+    "restify": "latest",
+    "async": "*"
   },
   "repository": {
     "type": "git",
