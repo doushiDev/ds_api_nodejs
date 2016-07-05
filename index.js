@@ -2,6 +2,7 @@ var restify = require('restify');
 
 var videoApi = require('./apis/video-api');
 var userApi = require('./apis/user-api');
+var userVidelApi = require('./apis/user-video-api')
 
 
 var port = 8792;
@@ -31,7 +32,7 @@ server.post(version + '/rest/user/registerUser', userApi.registerUser);
 server.get(version + '/rest/user/loginUser/:phone/:password', userApi.loginUser);
 
 // user-video
-server.post(version + '/rest/userAndVideo/addUserFavoriteVideo', userApi.registerUser);
+server.post(version + '/rest/userAndVideo/addUserFavoriteVideo', userVidelApi.addUserFavoriteVideo);
 
 
 // 配置静态文件 Swagger
