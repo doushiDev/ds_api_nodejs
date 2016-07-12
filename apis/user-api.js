@@ -1,7 +1,7 @@
 var pool = require('../utils/db-pooling.js');
 
 
-exports.registerUser = function (req, res, next) {
+exports.registerUser = function(req, res, next) {
   res.setHeader('content-type', 'application/json;charset=utf-8');
   res.charSet('utf-8');
 
@@ -9,7 +9,7 @@ exports.registerUser = function (req, res, next) {
 
   console.log('req.boby -> ' + req.body);
 
-  var user = new User(req.body["id"],req.body["nickName"],req.body["password"],req.body["headImage"],req.body["phone"],req.body["gender"],req.body["platformId"],req.body["platformName"]);
+  var user = new User(req.body["id"], req.body["nickName"], req.body["password"], req.body["headImage"], req.body["phone"], req.body["gender"], req.body["platformId"], req.body["platformName"]);
 
   console.log('User -> ' + user.nickName);
 
@@ -22,182 +22,182 @@ exports.registerUser = function (req, res, next) {
   if (user.phone != '') {
 
     selectUserSql += 'AND tu.phone = ? '
-	values.push(user.phone);
+    values.push(user.phone);
 
   }
 
   if (user.platformId != '') {
 
     selectUserSql += 'AND tu.platformId = ? '
-	values.push(user.platformId);
+    values.push(user.platformId);
   }
 
   console.log('sql -> ' + selectUserSql);
 
-  var resultJson ;
+  var resultJson;
 
-  pool.query(selectUserSql,values, function(err, rows, fields) {
-      if (err){
+  pool.query(selectUserSql, values, function(err, rows, fields) {
+    if (err) {
+      console.log(err);
+      throw err;
+    }
+
+
+
+    if (rows[0]) {
+      console.log('rows[0] -> ' + rows[0]["id"]);
+      console.log('用户已经存在');
+      resultJson = {
+
+
+        message: '用户已经存在',
+        statusCode: 200,
+        content: rows[0],
+        request: req.url
+
+      };
+      httpStatusCode = 200;
+      res.send(httpStatusCode, resultJson);
+      return next();
+
+    } else {
+
+      httpStatusCode = 201;
+    }
+
+    console.log('httpStatusCode -> ' + httpStatusCode);
+
+    if (httpStatusCode != 200) {
+
+      // 注册新用户
+      console.log('注册用户');
+
+      var installSql = 'insert into  `tb_user` ( `phone`, `password`, `headImage`, `status`, `gender`, `platformId`, `platformName`, `nickName`) values (? , ?, ?, 1, ?, ?, ?, ?)';
+
+      var values = [user.phone, user.password, user.headImage, user.gender, user.platformId, user.platformName, user.nickName];
+
+      pool.query(installSql, values, function(err, rows, fields) {
+        if (err) {
           console.log(err);
           throw err;
-      }
+        }
 
-      
-	  
-      if (rows[0]) {
-      	console.log('rows[0] -> ' + rows[0]["id"]);
-		console.log('用户已经存在');
-		resultJson = {
-      	
+        console.log('affectedRows  ' + rows.affectedRows);
 
-          message : '用户已经存在',
-          statusCode : 200,
-          content : rows[0],
-          request : req.url
+        if (rows.affectedRows > 0) {
 
-      	};
-      	httpStatusCode = 200;
-      	res.send(httpStatusCode, resultJson);
-      	return next();
+          console.log('用户注册成功');
 
-      }else {
+          user.id = rows.insertId;
 
-      	   	httpStatusCode = 201;
-      } 
+          resultJson = {
 
-      console.log('httpStatusCode -> ' + httpStatusCode);
 
-  if (httpStatusCode != 200) {
+            message: '用户注册成功',
+            statusCode: 201,
+            content: user,
+            request: req.url
 
-  	// 注册新用户
-  	console.log('注册用户');
- 	
- 		var installSql = 'insert into  `tb_user` ( `phone`, `password`, `headImage`, `status`, `gender`, `platformId`, `platformName`, `nickName`) values (? , ?, ?, 1, ?, ?, ?, ?)';
-    	
- 		var values = [user.phone, user.password, user.headImage, user.gender, user.platformId, user.platformName, user.nickName];
+          };
+          httpStatusCode = 201;
+          res.send(httpStatusCode, resultJson);
+          return next();
 
-	    pool.query(installSql, values, function(err, rows, fields) {
-	      if (err){
-	          console.log(err);
-	          throw err;
-	      }
+        } else {
+          resultJson = {
 
-	      console.log('affectedRows  ' + rows.affectedRows);
 
-	      if (rows.affectedRows > 0) {
-			
-			console.log('用户注册成功');
+            error: '注册失败',
+            error_code: 400,
+            error_detail: '注册失败',
+            request: req.url
 
-			user.id = rows.insertId;
+          };
+          res.send(400, resultJson);
+          return next();
 
-			resultJson = {
-	      	
+        }
 
-	          message : '用户注册成功',
-	          statusCode : 201,
-	          content : user,
-	          request : req.url
+      });
 
-	      	};
-	      	httpStatusCode = 201;
-	      	res.send(httpStatusCode, resultJson);
-	      	return next();
+    }
 
-	      } else {
-			resultJson = {
-      	
-
-         	 error: '注册失败',
-		     error_code: 400,
-		     error_detail: '注册失败',
-		     request: req.url
-
-      		};
-			res.send(400, resultJson);
-      		return next();
-
-	      }
-	      
-	  });
-
-	  }
-      
   });
 
 };
 
-exports.loginUser = function(req, res, next){
+exports.loginUser = function(req, res, next) {
 
-  	res.setHeader('content-type', 'application/json;charset=utf-8');
-  	res.charSet('utf-8');
+  res.setHeader('content-type', 'application/json;charset=utf-8');
+  res.charSet('utf-8');
 
-  	console.log('loginUser api');
-	
-	var selectUserSql = 'select * from tb_user tu where tu.`status` = 1 AND tu.phone = ?  AND tu.password = ? ';
+  console.log('loginUser api');
 
-  	var values = [req.params.phone, req.params.password];
+  var selectUserSql = 'select * from tb_user tu where tu.`status` = 1 AND tu.phone = ?  AND tu.password = ? ';
 
-  	var resultJson;
+  var values = [req.params.phone, req.params.password];
 
-  	console.log('selectUserSql -> ' + selectUserSql);
+  var resultJson;
 
-  	console.log('values -> ' + values);
+  console.log('selectUserSql -> ' + selectUserSql);
 
-
-  	pool.query(selectUserSql,values, function(err, rows, fields) {
-      if (err){
-          console.log(err);
-          throw err;
-      }
-
-      
-	  
-      if (rows[0]) {
-      	console.log('rows[0] -> ' + rows[0]["id"]);
-		console.log('登录成功');
-		rows[0]['password'] = '';
-		resultJson = {
-      	
-
-          message : '登录成功',
-          statusCode : 201,
-          content : rows[0],
-          request : req.url
-
-      	};
-
-      	res.send(201, resultJson);
-      	return next();
-      } else {
+  console.log('values -> ' + values);
 
 
-      	resultJson = {
-      	
+  pool.query(selectUserSql, values, function(err, rows, fields) {
+    if (err) {
+      console.log(err);
+      throw err;
+    }
 
-          error_code : '登录失败',
-          error_code : 400,
-          error_detail : '用户名或密码错误',
-          request : req.url
 
-      	};
-			res.send(400, resultJson);
-      		return next();
 
-      }      
+    if (rows[0]) {
+      console.log('rows[0] -> ' + rows[0]["id"]);
+      console.log('登录成功');
+      rows[0]['password'] = '';
+      resultJson = {
+
+
+        message: '登录成功',
+        statusCode: 201,
+        content: rows[0],
+        request: req.url
+
+      };
+
+      res.send(201, resultJson);
+      return next();
+    } else {
+
+
+      resultJson = {
+
+
+        error_code: '登录失败',
+        error_code: 400,
+        error_detail: '用户名或密码错误',
+        request: req.url
+
+      };
+      res.send(400, resultJson);
+      return next();
+
+    }
   });
 
 
 };
 
- 
 
-function User(id, nickName, password, headImage, phone, gender, platformId, platformName){
-　　	this.id=id;
-	this.nickName=nickName;
-	this.password=password;
-	this.headImage=headImage;
-	this.phone=phone;
-	this.gender=gender;
-	this.platformId=platformId;
-	this.platformName=platformName;
+
+function User(id, nickName, password, headImage, phone, gender, platformId, platformName) {　　
+  this.id = id;
+  this.nickName = nickName;
+  this.password = password;
+  this.headImage = headImage;
+  this.phone = phone;
+  this.gender = gender;
+  this.platformId = platformId;
+  this.platformName = platformName;
 }
