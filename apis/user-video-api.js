@@ -4,8 +4,6 @@ var async = require('async');
 
 
 
-
-
 exports.addUserFavoriteVideo1 = function(req, res, next) {
 
     console.log('addUserFavoriteVideo1 api');
@@ -38,7 +36,7 @@ exports.addUserFavoriteVideo1 = function(req, res, next) {
                 throw err;
             }
 
-            
+
 
             connection.query(sqls[item], function(err, res) {
                 console.log(res);
@@ -48,7 +46,6 @@ exports.addUserFavoriteVideo1 = function(req, res, next) {
 
 
         });
-
 
 
 
@@ -228,6 +225,85 @@ exports.addUserFavoriteVideo = function(req, res, next) {
             return next();
         });
     });
+};
 
 
+// 收藏视频
+exports.deleteByUserIdAndVideoId = function(req, res, next) {
+
+    console.log('deleteByUserIdAndVideoId api');
+
+    res.setHeader('content-type', 'application/json;charset=utf-8');
+    res.charSet('utf-8');
+
+    console.log('req.params.videoId -> ' + req.params.videoId);
+    console.log('req.params.userId -> ' + Number(req.params.userId));
+
+
+
+    var updateSql = 'update tb_user_video uv set  uv.status = 0  where uv.userId = ? and uv.videoId = ?';
+    var updateValues = [Number(req.params.userId), Number(req.params.videoId)];
+
+
+    var resultJson;
+
+    pool.getConnection(function(err, connection) {
+        if (err) {
+            throw err;
+        }
+
+        connection.beginTransaction(function(err) {
+
+            connection.query(updateSql, updateValues, function(err, rows, fields) {
+
+                if (err) {
+                    return connection.rollback(function() {
+                        console.log(err);
+                        resultJson = {
+                            error: 'err',
+                            error_code: 400,
+                            error_detail: err.message + '',
+                            request: req.url
+                        };
+                        res.send(400, resultJson);
+                        throw err;
+                    });
+
+                } else {
+                    console.log('修改收藏状态');
+
+                    console.log(rows)
+
+                    if (rows.changedRows > 0) {
+
+                        console.log('update install');
+                        // rows[0]['status'] == 1;
+
+                        resultJson = {
+                            message: '取消收藏成功',
+                            statusCode: 201,
+                            content: req.body,
+                            request: req.url
+                        };
+
+                        res.send(201, resultJson);
+
+                        connection.commit(function(err) {
+
+                            if (err) {
+                                return connection.rollback(function() {
+                                    throw err;
+                                });
+                            }
+                            connection.release();
+                        });
+
+                    } else {
+                        res.send(400, '取消收藏失败');
+                    }
+                }
+
+            });
+        });
+    });
 };

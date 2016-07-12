@@ -7,11 +7,12 @@ var userVidelApi = require('./apis/user-video-api')
 
 var port = 8792;
 
+
 var version = 'v2.0';
 
 var server = restify.createServer({
-    name: 'ds_api',
-    version: 'v2.0.0'
+	name: 'ds_api',
+	version: 'v2.0.0'
 });
 
 server.use(restify.bodyParser());
@@ -34,18 +35,22 @@ server.get(version + '/rest/user/loginUser/:phone/:password', userApi.loginUser)
 // user-video
 server.post(version + '/rest/userAndVideo/addUserFavoriteVideo', userVidelApi.addUserFavoriteVideo);
 
+// user-video 取消收藏
+server.del(version + '/rest/userAndVideo/deleteByUserIdAndVideoId/:videoId/:userId', userVidelApi.deleteByUserIdAndVideoId);
+
 
 // 配置静态文件 Swagger
 server.get(/\/public\/?.*/, restify.serveStatic({
-    directory: __dirname
+	directory: __dirname
 }));
 
 server.get(/\/public\/?.*\/?.*/, restify.serveStatic({
-    directory: __dirname
+	directory: __dirname
 }));
+
 
 
 
 server.listen(port, function() {
-    console.log('%s listening at %s', server.name, server.url);
+	console.log('%s listening at %s', server.name, server.url);
 });
