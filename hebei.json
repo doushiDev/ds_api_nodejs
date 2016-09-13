@@ -1,0 +1,690 @@
+[{
+    "coverImg": "http://fdfs.xmcdn.com/group6/M00/88/A3/wKgDg1T_oeXBWioFAAED42gDeNg669_mobile_large.jpg",
+
+    "name": "河北新闻广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/496/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/496/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/496/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/496/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group6/M03/88/B3/wKgDg1T_osORvKYdAABKZ4rUZNo940_mobile_large.jpg",
+
+    "name": "河北交通广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/498/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/498/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/498/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/498/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group8/M06/44/21/wKgDYVcOBymDm5UsAAh7SDJAEQI193_mobile_large.jpg",
+
+    "name": "河北音乐广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/494/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/494/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/494/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/494/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group14/M08/64/33/wKgDZFcwJ7jAQ0rNAAJTnl6EW8c892_mobile_large.jpg",
+
+    "name": "河北科教广播FM102.9",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/1743/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/1743/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/1743/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/1743/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group6/M04/84/B8/wKgDhFT_oZrDy-QvAAAshv1t6B4817_mobile_large.jpg",
+
+    "name": "河北生活广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/495/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/495/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/495/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/495/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group6/M07/5E/E3/wKgDhFU5_uXQH3BIAAAhtleUpjk601_mobile_large.jpg",
+
+    "name": "河北经济广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/497/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/497/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/497/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/497/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group6/M06/62/EA/wKgDg1U5_w3iRHYQAABCmERsGvs311_mobile_large.jpg",
+
+    "name": "河北私家车广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/499/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/499/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/499/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/499/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group6/M02/84/D8/wKgDhFT_o2ySA4nvAAANnMeJYqY806_mobile_large.jpg",
+
+    "name": "河北农民广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/500/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/500/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/500/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/500/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group6/M0B/88/AE/wKgDg1T_onjjoTi-AAAprhtgFyc747_mobile_large.jpg",
+
+    "name": "河北旅游文化广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/501/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/501/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/501/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/501/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group15/M09/E4/14/wKgDaFaXbODz7VUrAAAms5Sblmw415_mobile_large.jpg",
+
+    "name": "河北故事广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/1742/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/1742/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/1742/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/1742/64.m3u8?transcode=ts"
+    },
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group6/M0B/88/AD/wKgDg1T_om6B0SzTAAA9W1v5AXY928_mobile_large.jpg",
+
+    "name": "石家庄新闻广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/502/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/502/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/502/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/502/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group6/M06/62/EC/wKgDg1U5_zyj0M3DAACWvqB7OkQ427_mobile_large.jpg",
+
+    "name": "石家庄经济广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/503/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/503/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/503/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/503/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group6/M03/88/B3/wKgDg1T_osmy7XjYAAAVRZnkhsg292_mobile_large.jpg",
+
+    "name": "石家庄音乐广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/504/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/504/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/504/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/504/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group6/M03/A9/2E/wKgDhFUKnqThO8eFAAAkdJC1jIs634_mobile_large.jpg",
+
+    "name": "石家庄交通广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/505/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/505/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/505/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/505/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group13/M02/60/14/wKgDXlXS7t6y3s4lAABUGNqav2Y098_mobile_large.jpg",
+
+    "name": "石家庄好声音876",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/1436/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/1436/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/1436/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/1436/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group7/M04/E6/E7/wKgDX1aYr7-hHr8EAAAj4-PKnoU624_mobile_large.jpg",
+
+    "name": "石家庄绿色之声",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/1735/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/1735/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/1735/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/1735/64.m3u8?transcode=ts"
+    },
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group15/M04/45/1C/wKgDaFWmL5ajCBtlAAA91stKydg287_mobile_large.png",
+
+    "name": "石家庄经典流行1015音乐广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/1118/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/1118/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/1118/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/1118/64.m3u8?transcode=ts"
+    },
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group8/M01/F7/B9/wKgDYVauwJjQ-BZ0AATkoW2LDIg656_mobile_large.jpg",
+
+    "name": "976承德文艺交通广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/1855/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/1855/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/1855/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/1855/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group6/M03/84/DA/wKgDhFT_o4jDZA-AAAAg3Jta8uc943_mobile_large.jpg",
+
+    "name": "邯郸交通广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/515/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/515/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/515/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/515/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group6/M08/A9/3D/wKgDhFUKo1-iV0rBAAAvCRM-8O8133_mobile_large.jpg",
+
+    "name": "邯郸新闻综合广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/514/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/514/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/514/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/514/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group8/M02/44/D1/wKgDYVWmNLKiDP6qAAAYrTGblQg154_mobile_large.jpg",
+
+    "name": "邯郸旅游音乐广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/1131/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/1131/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/1131/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/1131/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group13/M05/E5/67/wKgDXlaXbLbypYD_AABEGGzafrg153_mobile_large.jpg",
+
+    "name": "保定欢乐调频884",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/1741/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/1741/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/1741/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/1741/64.m3u8?transcode=ts"
+    },
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group13/M08/44/E0/wKgDXlWmMlSz7ZEXAAAqAFiyams507_mobile_large.jpg",
+
+    "name": "邯郸大眼睛100.3",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/1127/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/1127/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/1127/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/1127/64.m3u8?transcode=ts"
+    },
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group6/M0A/84/C8/wKgDhFT_onPhvBU2AAD6WYzjI9I889_mobile_large.png",
+
+    "name": "保定飞扬1058汽车音乐广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/521/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/521/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/521/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/521/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group6/M0B/62/EF/wKgDg1U6AB-whynjAABJYw7U74s594_mobile_large.jpg",
+
+    "name": "保定城乡联盟广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/519/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/519/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/519/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/519/64.m3u8?transcode=ts"
+    },
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group6/M02/88/BA/wKgDg1T_o0SzPg-lAABXWgqC-bw143_mobile_large.jpg",
+
+    "name": "保定新闻广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/516/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/516/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/516/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/516/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group6/M08/84/D4/wKgDhFT_oy_iRNdPAABXWgqC-bw629_mobile_large.jpg",
+
+    "name": "保定交通广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/517/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/517/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/517/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/517/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group6/M00/84/BE/wKgDhFT_oenzZph7AAARlo03Kf8475_mobile_large.jpg",
+
+    "name": "保定经济广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/518/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/518/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/518/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/518/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group9/M09/44/93/wKgDYlWmMWPi7Z0UAAAKN_VVcGk718_mobile_large.jpg",
+
+    "name": "保定经典964汽车音乐广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/1123/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/1123/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/1123/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/1123/64.m3u8?transcode=ts"
+    },
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group6/M00/84/BE/wKgDhFT_oefjH8bAAAANpt9gDRs273_mobile_large.jpg",
+
+    "name": "保定城市服务广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/520/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/520/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/520/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/520/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group9/M05/92/D0/wKgDZldgu2eBfmbrAABBi7jcnuQ701_mobile_large.jpg",
+
+    "name": "保定苹果音乐广播FM880",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/1980/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/1980/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/1980/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/1980/64.m3u8?transcode=ts"
+    },
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group14/M05/93/BC/wKgDY1dgvM6QnaYmAAF7HbNGHTA485_mobile_large.jpg",
+
+    "name": "保定驾车调频FM913",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/1981/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/1981/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/1981/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/1981/64.m3u8?transcode=ts"
+    },
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group6/M04/88/9F/wKgDg1T_oa7A93CiAAA7CfFv4D0018_mobile_large.jpg",
+
+    "name": "秦皇岛体育音乐广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/522/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/522/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/522/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/522/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group6/M00/84/BE/wKgDhFT_oe2T7SxAAAAWxpbDCgk368_mobile_large.jpg",
+
+    "name": "秦皇岛交通广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/523/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/523/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/523/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/523/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group9/M00/44/AF/wKgDZlWmKFGxdzTEAAB04BaCqj8784_mobile_large.png",
+
+    "name": "秦皇岛综合广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/1114/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/1114/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/1114/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/1114/64.m3u8?transcode=ts"
+    },
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group6/M08/A9/49/wKgDhFUKpzbw7njZAABOk4Lxhsg638_mobile_large.jpg",
+
+    "name": "沧州新闻广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/524/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/524/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/524/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/524/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group6/M0A/84/C7/wKgDhFT_olugzshAAAUfXPOkUhE584_mobile_large.jpg",
+
+    "name": "张家口品味986",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/526/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/526/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/526/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/526/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group9/M01/44/AF/wKgDZlWmKQLT0_l8AABFKL2oWnU325_mobile_large.png",
+
+    "name": "衡水交通广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/1116/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/1116/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/1116/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/1116/64.m3u8?transcode=ts"
+    },
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group12/M09/44/87/wKgDW1WmLbfjKYOyAACWpHckVG8391_mobile_large.png",
+
+    "name": "衡水湖城之声961",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/1117/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/1117/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/1117/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/1117/64.m3u8?transcode=ts"
+    },
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group14/M04/44/ED/wKgDZFWmL8-yd9xeAAA91stKydg652_mobile_large.png",
+
+    "name": "衡水新闻广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/1119/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/1119/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/1119/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/1119/64.m3u8?transcode=ts"
+    },
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group14/M0A/E5/EA/wKgDZFaXavjjkZSfAAAViWxXH4c685_mobile_large.jpg",
+
+    "name": "衡水湖城之声",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/1738/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/1738/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/1738/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/1738/64.m3u8?transcode=ts"
+    },
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group15/M07/45/1D/wKgDZVWmMjGjeuYLAAAmNldbTGA155_mobile_large.jpg",
+
+    "name": "邯郸音乐广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/1125/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/1125/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/1125/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/1125/64.m3u8?transcode=ts"
+    },
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group14/M06/44/F0/wKgDZFWmMkySzd4nAAAoRs0yUNs600_mobile_large.jpg",
+
+    "name": "邢台爱尚986",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/1126/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/1126/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/1126/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/1126/64.m3u8?transcode=ts"
+    },
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group9/M02/44/BF/wKgDZlWmNAPAPAOVAAA90K_Agsw376_mobile_large.jpg",
+
+    "name": "沧州音乐广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/1130/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/1130/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/1130/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/1130/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group9/M0B/FB/80/wKgDYlazILvBOWkwAAGCWL7KuCM271_mobile_large.png",
+
+    "name": "张家口私家车广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/1858/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/1858/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/1858/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/1858/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group9/M07/FB/BA/wKgDZlazJa6CP5dEAAZOnu01q0M758_mobile_large.jpg",
+
+    "name": "张家口交通广播",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/1859/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/1859/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/1859/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/1859/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}, {
+    "coverImg": "http://fdfs.xmcdn.com/group12/M06/2B/0C/wKgDXFbx-C3w_hRXAARfCKrJjrY931_mobile_large.jpg",
+
+    "name": "心动FM",
+
+    "playUrl": {
+        "aac24": "http://live.xmcdn.com/live/1894/24.m3u8",
+        "aac64": "http://live.xmcdn.com/live/1894/64.m3u8",
+        "ts24": "http://live.xmcdn.com/live/1894/24.m3u8?transcode=ts",
+        "ts64": "http://live.xmcdn.com/live/1894/64.m3u8?transcode=ts"
+    },
+
+
+
+    "provinceCode" : 130000
+}]

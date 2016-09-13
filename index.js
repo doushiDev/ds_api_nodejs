@@ -27,6 +27,9 @@ server.get(version + '/rest/video/getVideosByBanner/:userId', videoApi.getVideos
 
 server.get(version + '/rest/video/getVideoTaxis/:userId', videoApi.getVideoTaxis);
 
+server.get(version + '/rest/video/getAds/:type', videoApi.getAds);
+
+
 // user-api
 server.post(version + '/rest/user/registerUser', userApi.registerUser);
 
@@ -36,7 +39,10 @@ server.get(version + '/rest/user/loginUser/:phone/:password', userApi.loginUser)
 server.post(version + '/rest/userAndVideo/addUserFavoriteVideo', userVidelApi.addUserFavoriteVideo);
 
 // user-video 取消收藏
-server.del(version + '/rest/userAndVideo/deleteByUserIdAndVideoId/:videoId/:userId', userVidelApi.deleteByUserIdAndVideoId);
+server.del(version + '/rest/userAndVideo/deleteByUserIdAndVideoId/:userId/:videoId', userVidelApi.deleteByUserIdAndVideoId);
+
+server.get(version + '/rest/userAndVideo/getVideosByUserId/:userId/:pageNum/:count', userVidelApi.getVideosByUserId);
+
 
 
 // 配置静态文件 Swagger

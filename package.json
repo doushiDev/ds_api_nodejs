@@ -13,7 +13,8 @@
     "MD5": "latest",
     "mysql": "latest",
     "restify": "latest",
-    "async": "*"
+    "async": "*",
+    "log4js": "*"
   },
   "repository": {
     "type": "git",

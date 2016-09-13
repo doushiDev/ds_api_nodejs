@@ -1,0 +1,237 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta  charset="utf-8"/>
+
+	<title>逗视</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+ <link rel="stylesheet" type="text/css" href="https://o40cqejff.qnssl.com/style.css">
+ <link rel="stylesheet" type="text/css" href="https://o40cqejff.qnssl.com/down_ad.css">
+ <script src="https://o40cqejff.qnssl.com/jquery.js"></script>
+<style>
+
+
+
+html,body{-webkit-touch-callout: none;}
+
+img {
+ clear: both;
+ display: block;
+ margin:auto;
+}
+
+video {
+ clear: both;
+ display: block;
+ margin:auto;
+}
+
+
+</style>
+
+
+
+<script>
+
+
+// //获取url中的参数
+// function getUrlParam(row) {
+//   var str=document.location.href.split("?");
+//   var s1=str[1];
+//   var s=s1.split("&");
+//   var ss=s[row].split("=")[1]
+//   if(ss!=null){
+//       return decodeURI(ss);
+//   }
+//   return null;
+
+// }
+
+// function getUrlParam1(row) {
+//   var str=document.location.href.split("?");
+//   var s1=str[1];
+//   var s=s1.split("&");
+//   var ss=s[row].split("=")[1]
+//   if(ss!=null){
+//       return ss;
+//   }
+//   return null;
+
+// }
+
+function disJson()
+{
+  var arr = window.location.href.split('?');
+  $.ajax({
+    url:"https://api.ds.itjh.net/v2.0/rest/video/getVideosById/"+ getQueryString("id") + "/0" ,
+    type:"GET",
+    success:succ
+  })
+}
+
+disJson()
+
+function getQueryString(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) return unescape(r[2]); return null;
+}
+
+function succ(json)
+{
+  var oJson = json.content;
+      //console.log(oJson);
+
+      // alert(oJson.title);
+ $("#activity-name").html(oJson.title);
+
+      // alert(oJson.videoUrl);
+
+        $("video").prop("poster",oJson.pic);
+ $("video").attr("src",oJson.videoUrl);
+
+  // if(oJson.imageformat == 0)$$('oLink').href = 'css/fstyle.css';
+  // document.title = oJson.name + ' - V影院';
+      //console.log(oJson.englishname);
+
+  // $$('box').children[0].innerHTML = oJson.name;
+  // $$('box').children[1].innerHTML = '主演：' + oJson.actor;
+  // $$('box').children[2].innerHTML = '导演：' + oJson.director;
+  // $$('subcontent').innerHTML= oJson.content;
+  // $$('oBg').src = oJson.facePic;
+
+
+
+}
+
+function jump_down_url(){
+
+  var ua = navigator.userAgent.toLowerCase();
+    if(ua.match(/MicroMessenger/i)=="micromessenger") {
+
+        location.href = "http://appstore.sinaapp.com/weixin/down.php?n=%e9%80%97%e8%a7%86&u=https://itunes.apple.com/cn/app/id1044917946";
+
+    } else {
+          location.href = "https://itunes.apple.com/cn/app/id1044917946";
+
+    }
+}
+
+function wx_like_report() {
+    var btn = document.getElementById('goodBtn');
+    var numContainer = document.getElementById('goodNum');
+    if(btn && numContainer) {
+        var unclickClassName = 'media_tool_meta meta_primary link_primary meta_praise';
+        var clickClassName = 'media_tool_meta meta_primary link_primary meta_praise praised';
+
+        var num = parseInt(numContainer.innerText);
+        if(btn.className == clickClassName) {
+            btn.className = unclickClassName;
+            numContainer.innerText = num-1;
+        } else {
+            btn.className = clickClassName;
+            numContainer.innerText = num+1;
+        }
+    }
+}
+
+
+function close_ad(){
+	var submenu=document.getElementById('down_ad');
+	submenu.style.display="none";
+
+	var submenu=document.getElementById('down_ad_br');
+	submenu.style.display="none";
+}
+
+</script><style type="text/css"></style>
+
+
+
+</head>
+
+<body>
+
+
+
+
+<div id="down_ad" class="help-modal modal-footer-banner" style="-webkit-transform-origin: 0px 0px; opacity: 1; -webkit-transform: scale(1, 1);">
+      <a href="javascript:close_ad();" class="close">
+        <img src="http://img.itjh.com.cn/itjhimgcloseicon.jpg" alt="Close">
+      </a>
+      <a href="javascript:jump_down_url();" class="avatar">
+        <img thumbnail="90x90" quality="100" src="http://img.itjh.com.cn/doushi_icon512*512.png" style="border-radius: 6px;">
+      </a>
+      <div id="floating-banner" class="goto-download" onclick="jump_down_url();">
+        <span>&nbsp;逗视</span>
+        <p>&nbsp;逗比的世界,逗比的视频</p>
+      </div>
+      <a href="javascript:jump_down_url();" class="btn-success goto-download">快来下载吧</a>
+ </div>
+
+
+<div class="rich_media">
+    <div class="rich_media_inner">
+
+            <h2 id="activity-name" class="rich_media_title">
+
+            <script type="text/javascript">
+                // document.write(getUrlParam(0));
+            </script>
+
+            </h2>
+
+         	 <div class="rich_media_meta_list"> <em class="rich_media_meta text">免费下载</em>
+                <a class="rich_media_meta link nickname" href="javascript:jump_down_url();">逗视</a>
+            </div>
+
+
+
+            <div id="page-content">
+
+                <div id="img-content">
+
+                       <div class="rich_media_content">
+            <script type="text/javascript">
+                // document.write(getUrlParam(0));
+
+                // // document.write(getUrlParam1(1));
+                // $(function(){
+                //      $("video").prop("poster",getUrlParam1(1));
+                //     $("source").attr("src",getUrlParam1(2));
+                // });
+            </script>
+                       <div>
+
+                       <video width="290" height="200"  id = "ddd" src="" controls="controls" poster="">
+
+                              <!--   <source type="video/mp4"  id = "ss"  src="http://gslb.miaopai.com/stream/uPIAMoMaUwS0PfHRsjKVog__.mp4" width="290" height="200">  -->
+                          </video>
+                          <!--
+					        	 			<video width="290" height="200" id＝"pic" controls="controls" poster="">
+
+						                		<source type="video/mp4"  id ＝ "videoUrl"  src="" width="290" height="200">
+						           		</video>					      -->
+
+
+						          </div>
+                       </div>
+                </div>
+ 					<!--<a class="media_tool_meta link_primary meta_extra" href="javascript:void(0);">举报</a>-->
+
+                 </div>
+                   <div id="down_ad_br"><br><br></div>
+
+           </div>
+
+   </div>
+</div>
+
+</body>
+
+
+</html>

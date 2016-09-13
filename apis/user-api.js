@@ -174,7 +174,7 @@ exports.loginUser = function(req, res, next) {
       resultJson = {
 
 
-        error_code: '登录失败',
+        error: '登录失败',
         error_code: 400,
         error_detail: '用户名或密码错误',
         request: req.url
